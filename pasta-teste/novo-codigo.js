@@ -8,7 +8,7 @@ alunos = ["Enzo", "Valentina", "Joana", "Marcio"]
 notas = [ [5.6, 7.2], [9.1, 8.4], [5.8, 4.6], [5.5, 8.5] ]
 
 
-alunoSelecionado = 2 //posicao do aluno no vetor
+alunoSelecionado = 0 //posicao do aluno no vetor
 
 situacao = ""
 
@@ -32,33 +32,40 @@ if (media >= 7.00){
     }
 
 // Retorna a situacao do aluno apos verificar sua situacao
-switch (situacao){
-  case "Aprovado!!":
-    console.log("Aprovado!!")
-    console.log("")
-    console.log(nomeDoAluno)
-    console.log("A primeira nota foi:", nota1)
-    console.log("Asegunda nota foi:", nota2)
-    console.log(nomeDoAluno, "Teve Média", media)
-  break;
-  case "Em recuperação!!":
-    console.log("Em recuperação!!")
-    console.log("")
-    console.log(nomeDoAluno)
-    console.log("A primeira nota foi:", nota1)
-    console.log("Asegunda nota foi:", nota2)
-    console.log(nomeDoAluno, "Teve Média", media)
-  break;
-  case "Reprovado!!":
-    console.log("Reprovado!!")
-    console.log("")
-    console.log(nomeDoAluno)
-    console.log("A primeira nota foi:", nota1)
-    console.log("Asegunda nota foi:", nota2)
-    console.log(nomeDoAluno, "Teve Média", media)
-  break;
+
+function retornaSituacao (situacao){//Criada uma funcao, mas todas as funcionalidades nao estao funcionando 
+
+
+  switch (situacao){
+    case "Aprovado!!":
+      console.log("Aprovado!!")
+      console.log("")
+      console.log(nomeDoAluno)
+      console.log("A primeira nota foi:", nota1)
+      console.log("Asegunda nota foi:", nota2)
+      console.log(nomeDoAluno, "Teve Média", media)
+    break;
+    case "Em recuperação!!":
+      console.log("Em recuperação!!")
+      console.log("")
+      console.log(nomeDoAluno)
+      console.log("A primeira nota foi:", nota1)
+      console.log("Asegunda nota foi:", nota2)
+      console.log(nomeDoAluno, "Teve Média", media)
+    break;
+    case "Reprovado!!":
+      console.log("Reprovado!!")
+      console.log("")
+      console.log(nomeDoAluno)
+      console.log("A primeira nota foi:", nota1)
+      console.log("Asegunda nota foi:", nota2)
+      console.log(nomeDoAluno, "Teve Média", media)
+    break;
+  }
 }
 
+
 // Imprime resultado 
+console.log(situacao)
 console.log(alunos.length, "alunos fizeram a prova.")
 
