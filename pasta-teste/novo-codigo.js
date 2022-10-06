@@ -1,6 +1,6 @@
 //Algoritmo que calcula a media aritmetica entre duas notas
 //O aluno é selecionado pela posicao do vetor
-
+//Versao 1.0
 
 
 alunos = ["Enzo", "Valentina", "Joana", "Marcio"]
